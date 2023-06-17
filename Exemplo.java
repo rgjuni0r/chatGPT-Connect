@@ -17,7 +17,7 @@ import java.net.URL; // Biblioteca para trabalhar com URLs
 public class Exemplo {
 	// DEFININDO AS CONSTANTES DE URL E API KEY
 	private static final String apiUrl = "https://api.openai.com/v1/chat/completions";
-	private static final String apiKey = "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";
+	private static final String apiKey = "DIGITE_AQUI_SUA_CHAVE_API";
 
 	public static void main(String[] args) throws Exception {
 		// CRIANDO CONSTRUTOR: CRIANDO URL COM O ENDEREÇO DA API
