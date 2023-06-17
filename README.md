@@ -42,6 +42,21 @@ O ChatGPT é um modelo de linguagem poderoso desenvolvido pela OpenAI que usa um
 
 Ao compreender esses aspectos dos tokens no ChatGPT, você estará melhor equipado para usar o modelo de forma eficaz e aproveitar ao máximo suas capacidades de processamento de texto.
 
+# Informativo sobre o Limite de Envio de Texto na API do OpenAI
+A API do OpenAI é uma plataforma que permite a interação com modelos de linguagem avançados, como o ChatGPT, de forma programática. No entanto, há um limite no tamanho do texto que pode ser enviado para a API em uma única chamada. Aqui estão algumas informações importantes sobre o limite de envio de texto:
+
+  - Limite de Tokens: O limite de envio de texto é baseado na contagem de tokens. Um token pode ser tão curto quanto um caractere ou tão longo quanto uma palavra ou parte de uma palavra, dependendo do treinamento do modelo. O ChatGPT, por exemplo, tem um limite máximo de 4096 tokens por solicitação.
+
+  - Texto de Entrada e de Saída: O limite de tokens se aplica tanto ao texto de entrada fornecido ao modelo quanto ao texto de saída retornado pela API. Isso significa que o tamanho do texto de entrada e o tamanho do texto de saída devem ser considerados ao fazer chamadas para a API.
+
+  - Cálculo da Contagem de Tokens: Para determinar o número de tokens em um texto, você pode usar bibliotecas como a OpenAI's tiktoken para realizar essa contagem antes de enviar uma solicitação à API. Essa verificação prévia pode ajudar a evitar ultrapassar o limite de tokens e ajustar o texto conforme necessário.
+
+  - Custos e Eficiência: Lembre-se de que o uso de mais tokens em uma solicitação pode resultar em um custo mais alto e em tempos de resposta mais longos. É recomendável otimizar o uso de tokens, removendo partes desnecessárias do texto ou dividindo-o em várias chamadas, se necessário.
+
+  - Truncagem e Divisão de Texto: Se o texto exceder o limite máximo de tokens, é necessário fazer ajustes. A truncagem envolve a remoção de partes do texto para que ele se encaixe no limite, mas isso pode afetar a coerência do resultado. A divisão do texto em partes menores pode ser uma alternativa quando a truncagem não é adequada.
+
+Certifique-se de consultar a documentação oficial da OpenAI para obter informações mais detalhadas sobre o limite de envio de texto na API. Isso ajudará você a compreender os detalhes específicos do modelo que está utilizando e a aproveitar ao máximo a plataforma.
+
 # Autor
   - O código foi desenvolvido por Rogério Moreira Alves Júnior em 17/06/2023 (BR-PT).
 
