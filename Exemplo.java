@@ -98,7 +98,7 @@ public class Exemplo {
 			return; // SE A RESPOSTA FOR DIFERENTE DE 200, ENCERRA A OPERAÇÃO
 		}
 
-		// LENDO A RESPOSTA DO SERVIDOR
+		// LENDO A RESPOSTA DO SERVIDOR (MANIPULANDO EXTRAÇÃO TEXTO JSON)
 		StringBuilder response = new StringBuilder();
 		try (BufferedReader br = new BufferedReader(new InputStreamReader(request.getInputStream(), "utf-8"))) {
 			String responseLine = null;
