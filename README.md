@@ -3,7 +3,7 @@ MODELO DE CONEXÃO VIA API COM CHATGPT
 Este repositório contém um exemplo de código em Java que demonstra como estabelecer uma conexão com a API do ChatGPT e obter uma resposta gerada pelo modelo GPT-3.5-turbo.
 
 
-# DESCRIÇÃO DO CÓDIGO
+# Descrição do Código
   - O código é uma implementação simples que utiliza bibliotecas nativas do Java para realizar a conexão HTTP com a API do ChatGPT. Ele permite enviar uma solicitação para a API, receber a resposta e extrair o conteúdo desejado.
 
   - O programa inicia importando as bibliotecas necessárias para lidar com a leitura de dados de entrada, saída de dados, conexão HTTP e manipulação de URLs.
@@ -21,19 +21,19 @@ Este repositório contém um exemplo de código em Java que demonstra como estab
   - A resposta é então manipulada para extrair o conteúdo desejado, utilizando índices para identificar a posição inicial e final do trecho de texto desejado no JSON. O conteúdo extraído é impresso na saída do console.
 
 
-# USO
+# Uso
   - Este código pode ser utilizado como ponto de partida para desenvolver aplicações que interagem com a API do ChatGPT. É importante lembrar que é necessário ter uma chave de API válida para autenticação.
 
 
-# AUTOR
+# Autor
   - O código foi desenvolvido por Rogério Moreira Alves Júnior em 17/06/2023 (BR-PT).
 
 
-# TÍTULO
+# Título
   - MODELO DE CONEXÃO VIA API COM CHATGPT
 
 
-# MODELO
+# Modelo
   - O código utiliza o modelo GPT-3.5-turbo do ChatGPT para gerar as respostas.
   - O modelo GPT-3.5-turbo é conhecido por sua capacidade avançada de processar linguagem natural e gerar respostas coesas e contextualmente relevantes. Ao utilizar esse modelo, o código proporciona uma experiência de conversação mais fluente e natural com o ChatGPT.
 
