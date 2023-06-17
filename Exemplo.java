@@ -109,29 +109,29 @@ public class Exemplo {
 
 		// EXTRAINDO A RESPOSTA DESEJADA DO JSON DE RESPOSTA (MANIPULANDO RESPOSTA JSON
 		// - EXTRAINDO O CORPO DE TEXTO RECEBIDO)
-		String responseString = response.toString(); // Aqui, convertemos o objeto response do tipo StringBuilder para
-														// uma string.
+		String responseString = response.toString(); // Aqui, convertemos o objeto response do tipo StringBuilder para uma string.
+														
 		int startIndex = responseString.indexOf("\"content\": \""); // Procuramos a posição inicial do trecho de texto
-																	// que indica o início da resposta desejada no JSON.
-																	// Essa posição é armazenada na variável startIndex.
+									   // que indica o início da resposta desejada no JSON.
+									   // Essa posição é armazenada na variável startIndex.
 
 		if (startIndex != -1) { // Verificamos se o startIndex é diferente de -1, o que significa que
-								// encontramos a resposta desejada. Caso contrário, a resposta não foi
-								// encontrada.
+					// encontramos a resposta desejada. Caso contrário, a resposta não foi encontrada.
+	
 			startIndex += "\"content\": \"".length(); // Se a resposta foi encontrada, ajustamos o startIndex
-														// adicionando o comprimento do trecho \"content\": \", para
-														// obter a posição inicial do conteúdo da resposta.
+								  // adicionando o comprimento do trecho \"content\": \", para
+								  // obter a posição inicial do conteúdo da resposta.
+			
 			int endIndex = responseString.indexOf("\"", startIndex); // Procuramos a posição final do conteúdo da
-																		// resposta, que é o próximo caractere de aspas
-																		// duplas após o startIndex.
+										// resposta, que é o próximo caractere de aspas
+										// duplas após o startIndex.
 			String extractedResponse = responseString.substring(startIndex, endIndex); // Usando o método substring,
-																						// extraímos o conteúdo da
-																						// resposta com base nas
-																						// posições startIndex e
-																						// endIndex.
+													// extraímos o conteúdo da
+													// resposta com base nas
+													// posições startIndex e
+													// endIndex.
 
-			// Imprimindo a resposta extraída (Imprimimos a resposta extraída na saída do
-			// console, adicionando uma mensagem informativa.)
+			// IMPRIMINDO A RESPOSTA EXTRAÍDA(Imprimimos a resposta extraída na saída do console, adicionando uma mensagem informativa.)
 			System.out.println("Resposta GPT: " + extractedResponse);
 		} else {
 			System.out.println("Resposta não encontrada.");
