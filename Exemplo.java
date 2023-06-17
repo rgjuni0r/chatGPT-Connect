@@ -17,7 +17,7 @@ import java.net.URL; // Biblioteca para trabalhar com URLs
 public class Exemplo {
 	// DEFININDO AS CONSTANTES DE URL E API KEY
 	private static final String apiUrl = "https://api.openai.com/v1/chat/completions";
-	private static final String apiKey = "DIGITE_AQUI_SUA_CHAVE_API";
+	private static final String apiKey = "DIGITE_AQUI_SUA_CHAVE_API";	// Você pode pegar sua chave API aqui: https://platform.openai.com/account/api-keys
 
 	public static void main(String[] args) throws Exception {
 		// CRIANDO CONSTRUTOR: CRIANDO URL COM O ENDEREÇO DA API
@@ -32,19 +32,18 @@ public class Exemplo {
 		// CONFIGURAÇÃO DA SOLICITAÇÃO
 		request.setRequestMethod("POST"); // Definindo o método da solicitação como POST para envio de dados ao servidor
 		request.setRequestProperty("Content-Type", "application/json; utf-8"); // Definindo as propriedades da
-																				// solicitação, como o tipo de conteúdo
-																				// e a autorização (O tipo de conteúdo é
-																				// definido como "application/json;
-																				// utf-8" para indicar que o corpo da
-																				// solicitação está em formato JSON)
+											// solicitação, como o tipo de conteúdo
+											// e a autorização (O tipo de conteúdo é
+											// definido como "application/json;
+											// utf-8" para indicar que o corpo da
+											// solicitação está em formato JSON)
 
 		request.setRequestProperty("Authorization", "Bearer " + apiKey); // A autorização é definida como "Bearer"
-																			// seguido da chave de API para autenticar a
-																			// solicitação
+										// seguido da chave de API para autenticar a
+									       // solicitação
 
-		request.setDoOutput(true); // Habilitando a saída de dados na conexão para enviar o corpo da solicitação ao
-									// servidor
-
+		request.setDoOutput(true); // Habilitando a saída de dados na conexão para enviar o corpo da solicitação ao servidor
+		
 		// ARMAZENANDO OS PARÂMETROS EM VARIÁVEIS
 		String model = "gpt-3.5-turbo"; // Armazenando o modelo do GPT
 		String userInput = "Olá, Chat GPT!"; // Armazenando a entrada do usuário
