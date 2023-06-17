@@ -47,7 +47,7 @@ public class Exemplo {
 		// ARMAZENANDO OS PARÂMETROS EM VARIÁVEIS
 		String model = "gpt-3.5-turbo"; // Armazenando o modelo do GPT
 		String userInput = "Olá, Chat GPT!"; // Armazenando a entrada do usuário
-		int maxTokens = 50; // Definindo o número máximo de tokens
+		int maxTokens = 50; // Definindo o número máximo de tokens (p/ mais informações, consultar documentação 
 
 		// MONTANDO O CORPO DA SOLICITAÇÃO NO FORMATO JSON
 		String requestData = String.format(
