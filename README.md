@@ -27,6 +27,20 @@ Este repositório contém um exemplo de código em Java que demonstra como estab
 # Uso
   - Este código pode ser utilizado como ponto de partida para desenvolver aplicações que interagem com a API do ChatGPT. É importante lembrar que é necessário ter uma chave de API válida para autenticação.
 
+# Informativo sobre os Tokens do ChatGPT
+O ChatGPT é um modelo de linguagem poderoso desenvolvido pela OpenAI que usa uma abordagem baseada em tokens para processar texto. Compreender como os tokens funcionam é fundamental para aproveitar ao máximo o modelo. Aqui estão algumas informações importantes sobre os tokens do ChatGPT:
+
+  - Definição de Token: Em termos simples, um token é uma unidade de texto. Pode representar um único caractere, uma palavra ou até mesmo uma parte de uma palavra, dependendo do treinamento do modelo.
+
+  - Limite de Tokens: O ChatGPT tem um limite máximo de 4096 tokens para cada solicitação. Isso inclui tanto a entrada (texto fornecido ao modelo) quanto a saída (resposta gerada pelo modelo). Se um texto exceder esse limite, será necessário reduzi-lo ou dividir em partes menores para processá-lo corretamente.
+
+  - Contagem de Tokens: Ao trabalhar com o ChatGPT, é importante monitorar a contagem de tokens para evitar ultrapassar o limite máximo. É possível usar bibliotecas como a OpenAI's tiktoken para verificar a contagem de tokens antes de enviar uma solicitação ao modelo.
+
+  - Custos de Tokens: Ao utilizar a API do ChatGPT, você será cobrado com base na quantidade de tokens utilizados em suas solicitações. Isso inclui tanto os tokens de entrada quanto os tokens de saída. Portanto, é essencial otimizar o uso de tokens para controlar os custos e garantir uma experiência eficiente.
+
+  - Tokens Especiais: O ChatGPT utiliza tokens especiais para fornecer instruções ou orientações ao modelo. Por exemplo, o token <s> pode ser usado para marcar o início do texto de entrada, e o token </s> para marcar o final. Ao fornecer instruções claras e relevantes ao modelo, você pode obter resultados mais precisos.
+
+Ao compreender esses aspectos dos tokens no ChatGPT, você estará melhor equipado para usar o modelo de forma eficaz e aproveitar ao máximo suas capacidades de processamento de texto.
 
 # Autor
   - O código foi desenvolvido por Rogério Moreira Alves Júnior em 17/06/2023 (BR-PT).
